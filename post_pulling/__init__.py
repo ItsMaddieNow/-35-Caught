@@ -38,7 +38,7 @@ def pull():
 
 
 
-    with open("posts2.json", "w") as f:
+    with open("posts.json", "w") as f:
         f.write(json.dumps({"posts": posts}, indent=4))
         f.close()
 

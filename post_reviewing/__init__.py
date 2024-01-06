@@ -24,7 +24,7 @@ def review():
 
     
 
-    window = review_window.MyWindow("posts2.json", conn)
+    window = review_window.MyWindow("posts.json", conn)
     window.mainloop()
 
 

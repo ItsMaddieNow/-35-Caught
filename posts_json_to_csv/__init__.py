@@ -4,11 +4,11 @@ import json
 
 
 def convert():
-    with open("posts2 copy.json", "r") as posts_json:
+    with open("posts.json", "r") as posts_json:
         posts = json.loads(posts_json.read())['posts']
         posts_json.close() 
         
-        with open("posts2.csv", "w") as posts_csv:
+        with open("posts.csv", "w") as posts_csv:
             field_names = ["blog", "post_url", "tags", "date", "timestamp"]
             writer = csv.DictWriter(posts_csv, fieldnames= field_names)
             writer.writeheader()
